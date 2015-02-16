@@ -1009,6 +1009,11 @@ public class KinectManager : MonoBehaviour
 		{
 			string message = e.Message + " - " + KinectWrapper.GetNuiErrorString(hr);
 			Debug.LogError(message);
+			if (e.Message == "NuiInitialize Failed")
+			{
+				GameObject.Find ("_GameManager_").GetComponent<GameManager> ().kinect = false;
+				print ("tu bude obrazok");
+			}
 			Debug.LogError(e.ToString());
 			if(CalibrationText != null)
 				CalibrationText.guiText.text = message;

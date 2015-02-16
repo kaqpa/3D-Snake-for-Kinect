@@ -537,6 +537,10 @@ Prefab:
       propertyPath: currentLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13214994, guid: e7be93e81411f7a48b82581af2563fe0, type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7be93e81411f7a48b82581af2563fe0, type: 2}
   m_RootGameObject: {fileID: 923996830}
@@ -782,6 +786,8 @@ MonoBehaviour:
   currentLevel: 0
   death: 0
   winning: 0
+  game: 0
+  kinect: 0
   eating: {fileID: 8300000, guid: 3b4b67ccd67a15e44937e365a4caa2d7, type: 3}
 --- !u!132 &923996832
 GUIText:
@@ -792,7 +798,7 @@ GUIText:
   m_GameObject: {fileID: 923996830}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Score
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}

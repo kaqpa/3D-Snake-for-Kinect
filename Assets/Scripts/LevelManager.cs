@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
 	void Start () 
 	{
 		// creates snake
+		GameObject.Find ("_GameManager_").GetComponent<GameManager> ().GameStarted ();
 		GameObject snake1 = (GameObject)Instantiate (snakehead, new Vector3(4, 4, 2), Quaternion.identity);
 		snake1.name = "snake1";
 		GameObject snake2 = (GameObject)Instantiate (snakeprefab, new Vector3(3, 4, 2), Quaternion.identity);

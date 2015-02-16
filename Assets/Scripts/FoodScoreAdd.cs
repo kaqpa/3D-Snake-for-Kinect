@@ -29,6 +29,7 @@ public class FoodScoreAdd : MonoBehaviour {
 
 
 			print("won the level");
+			GameObject.Find ("_GameManager_").GetComponent<GameManager> ().GameEnded();
 			if(GameObject.Find ("_GameManager_").GetComponent<GameManager> ().currentLevel == 10)
 			{
 				print("won the game");

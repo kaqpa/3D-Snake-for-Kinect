@@ -22,7 +22,9 @@ public class Move2 : MonoBehaviour
 	void Start () 
 	{
 		//gestureListener = Camera.main.GetComponent<GestureListener>();
-		gestureListener = GameObject.Find ("KinectObject").GetComponent<GestureListener> ();
+		if (GameObject.Find ("_GameManager_").GetComponent<GameManager> ().kinect) {
+			gestureListener = GameObject.Find ("KinectObject").GetComponent<GestureListener> ();
+		}
 		// repeats the moving routine every "frequency" seconds
 		level = (float)GameObject.Find("_Level Manager_").GetComponent<LevelManager>().level;
 		//speed = 1.1f - (0.5f + level/10);
