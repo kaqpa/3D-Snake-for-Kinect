@@ -1,15 +1,17 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 	private int score;
 	//private string levelToLoad;
+
 	public int currentLevel;
 	public bool death;
 	public bool winning;
 	public bool game;
 	public bool kinect;
+	public bool menu;
 
 	private GestureListener gestureListener; //gesture listener for Kinect
 	public AudioClip eating;
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour {
 		death = false;
 		winning = false;
 		game = false;
+		menu = true;
 		score = 0;
 		//This keeps the object alive across multiple scenes.
 		DontDestroyOnLoad (this.gameObject);

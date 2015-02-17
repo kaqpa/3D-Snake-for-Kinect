@@ -97,7 +97,7 @@ public class KinectManager : MonoBehaviour
 	public bool ControlMouseCursor = false;
 	
 	// Bool to keep track of whether Kinect has been initialized
-	private bool KinectInitialized = false; 
+	public bool KinectInitialized = false; 
 	
 	// Bools to keep track of who is currently calibrated.
 	private bool Player1Calibrated = false;
@@ -861,6 +861,8 @@ public class KinectManager : MonoBehaviour
 		int hr = 0;
 		if(GameObject.Find("KinectObject") != this.gameObject)
 			Destroy(this.gameObject);
+
+
 		try
 		{
 			hr = KinectWrapper.NuiInitialize(KinectWrapper.NuiInitializeFlags.UsesSkeleton |
@@ -1339,9 +1341,12 @@ public class KinectManager : MonoBehaviour
 				GUI.DrawTexture (usersClrRect, usersClrTex);
 			}
 		} else {
+			int current = GameObject.Find ("_GameManager_").GetComponent<GameManager> ().currentLevel;
+			if (current == 0)
+			//print(current);
 			GUI.DrawTexture (new Rect(50,50,60,60), disabledKinect);
-			GUI.Label(new Rect(120, 50, 200, 50), "Kinect is not connected. Use arrows and keys f(front) and b(back) instead.");
-			print("dis");
+			//GUI.Label(new Rect(120, 50, 200, 50), "Kinect is not connected. Use arrows and keys f(front) and b(back) instead.");
+			//print("dis");
 		}
 
     }
