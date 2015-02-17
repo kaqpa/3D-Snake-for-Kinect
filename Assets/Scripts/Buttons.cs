@@ -19,10 +19,12 @@ public class Buttons : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		if(levelToLoad.Equals ("exit")){
+		print (levelToLoad);
+		if(levelToLoad=="exit"){
 			//exit game
-			//print("exit");
+			print("exit passed");
 			Application.Quit();
+			print("game is over");
 		}else
 			if(levelToLoad.Equals("Next level"))
 		{
