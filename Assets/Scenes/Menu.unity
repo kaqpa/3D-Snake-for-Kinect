@@ -1258,6 +1258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00db858c1f8ff90478dad0aa1bac9a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabledKinect: {fileID: 2800000, guid: e79d2447c9cebbc40b0c550bf59fb309, type: 3}
   TwoUsers: 0
   ComputeUserMap: 1
   ComputeColorMap: 0

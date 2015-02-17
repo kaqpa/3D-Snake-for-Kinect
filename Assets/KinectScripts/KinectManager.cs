@@ -11,6 +11,7 @@ using System.Text;
 public class KinectManager : MonoBehaviour
 {
 	public enum Smoothing : int { None, Default, Medium, Aggressive }
+	public Texture disabledKinect;
 	
 	
 	// Public Bool to determine how many players there are. Default of one user.
@@ -1013,6 +1014,8 @@ public class KinectManager : MonoBehaviour
 			{
 				GameObject.Find ("_GameManager_").GetComponent<GameManager> ().kinect = false;
 				print ("tu bude obrazok");
+				print(disabledKinect);
+
 			}
 			Debug.LogError(e.ToString());
 			if(CalibrationText != null)
@@ -1329,18 +1332,18 @@ public class KinectManager : MonoBehaviour
 	// Draw the Histogram Map on the GUI.
     void OnGUI()
     {
-		if(KinectInitialized)
-		{
-	        if(ComputeUserMap && (/**(allUsers.Count == 0) ||*/ DisplayUserMap))
-	        {
-	            GUI.DrawTexture(usersMapRect, usersLblTex);
-	        }
-
-			else if(ComputeColorMap && (/**(allUsers.Count == 0) ||*/ DisplayColorMap))
-			{
-				GUI.DrawTexture(usersClrRect, usersClrTex);
+		if (KinectInitialized) {
+			if (ComputeUserMap && (/**(allUsers.Count == 0) ||*/ DisplayUserMap)) {
+				GUI.DrawTexture (usersMapRect, usersLblTex);
+			} else if (ComputeColorMap && (/**(allUsers.Count == 0) ||*/ DisplayColorMap)) {
+				GUI.DrawTexture (usersClrRect, usersClrTex);
 			}
+		} else {
+			GUI.DrawTexture (new Rect(50,50,60,60), disabledKinect);
+			GUI.Label(new Rect(120, 50, 200, 50), "Kinect is not connected. Use arrows and keys f(front) and b(back) instead.");
+			print("dis");
 		}
+
     }
 	
 	// Update the User Map
@@ -2134,6 +2137,7 @@ public class KinectManager : MonoBehaviour
 		
 		return false;
 	}
+
 	
 }
 
