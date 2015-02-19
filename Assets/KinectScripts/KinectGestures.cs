@@ -702,7 +702,7 @@ public class KinectGestures
 				{
 					case 0:  // gesture detection - phase 1 (perpetual)
 						if(jointsTracked[rightHandIndex] && jointsTracked[rightHipIndex] &&
-							(jointsPos[rightHandIndex].y - jointsPos[rightHipIndex].y) > -0.1f)
+							(jointsPos[rightHandIndex].y - jointsPos[rightHipIndex].y) > -0.05f)
 						{
 							gestureData.joint = rightHandIndex;
 							gestureData.timestamp = timestamp;
@@ -727,7 +727,7 @@ public class KinectGestures
 				{
 					case 0:  // gesture detection - phase 1 (perpetual)
 						if(jointsTracked[leftHandIndex] && jointsTracked[leftHipIndex] &&
-							(jointsPos[leftHandIndex].y - jointsPos[leftHipIndex].y) > -0.1f)
+							(jointsPos[leftHandIndex].y - jointsPos[leftHipIndex].y) > -0.05f)
 						{
 							gestureData.joint = leftHandIndex;
 							gestureData.timestamp = timestamp;

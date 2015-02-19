@@ -17,12 +17,16 @@ public class Move2 : MonoBehaviour
 	public GameObject food;
 	public GameObject snakeprefab;
 	public AudioClip eating;
-
+	public GameObject ko;
 	// Use this for initialization
 	void Start () 
 	{
 		//gestureListener = Camera.main.GetComponent<GestureListener>();
-		gestureListener = GameObject.Find ("KinectObject").GetComponent<GestureListener> ();
+		ko = GameObject.Find ("KinectObject");
+		if (ko != null) {  //pohyb
+						gestureListener = ko.GetComponent<GestureListener> ();
+				}
+
 		// repeats the moving routine every "frequency" seconds
 		level = (float)GameObject.Find("_Level Manager_").GetComponent<LevelManager>().level;
 		//speed = 1.1f - (0.5f + level/10);

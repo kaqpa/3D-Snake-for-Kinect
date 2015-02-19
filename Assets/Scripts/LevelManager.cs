@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		Screen.showCursor = false;
 		// creates snake
 		GameObject.Find ("_GameManager_").GetComponent<GameManager> ().game = true;
 		GameObject snake1 = (GameObject)Instantiate (snakehead, new Vector3(4, 4, 2), Quaternion.identity);
@@ -78,6 +79,12 @@ public class LevelManager : MonoBehaviour
 		for (int i = 1; i <= snakeLength; i++) 
 		{
 			inside = GeometryUtility.TestPlanesAABB (GeometryUtility.CalculateFrustumPlanes (mainCamera), GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds);
+			if (GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds.center.z<-20)
+			{
+				inside = false;
+			//	print(false);
+			}
+			//print(GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds.center.z);
 			if (inside) 
 			{
 				break;

@@ -4,6 +4,8 @@ using System.Collections;
 public class Buttons : MonoBehaviour {
 
 	public string levelToLoad;
+	public Texture defaultTexture;
+	public Texture enterTexture;
 	//public string newLevel;
 	//Use this for initialization
 	void Start () {

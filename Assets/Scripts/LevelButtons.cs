@@ -5,6 +5,8 @@ public class LevelButtons : MonoBehaviour {
 
 	public string levelToLoad;
 	public int levelNumber;
+	public Texture defaultTexture;
+	public Texture enterTexture;
 	//public string newLevel;
 	//Use this for initialization
 	void Start () {
