@@ -55,7 +55,9 @@ public class LevelManager : MonoBehaviour
 			float py = (float) Random.Range(0,10);
 			float pz = (float) Random.Range(0,10);
 			foodPosition[i] = new Vector3(px, py, pz);
+			//creates food for both screens
 			Instantiate(food, foodPosition[i], Quaternion.identity);
+			Instantiate(foodColored, foodPosition[i], Quaternion.identity);
 		}
 		// creates poison
 		int poisonNumber = level;
@@ -67,11 +69,12 @@ public class LevelManager : MonoBehaviour
 			float pz = (float) Random.Range(0,10);
 			poisonPosition[i] = new Vector3(px, py, pz);
 			Instantiate(poison, poisonPosition[i], Quaternion.identity);
+			Instantiate(poisonColored, poisonPosition[i], Quaternion.identity);
 		}	
 	}
 
-	// Update is called once per frame
-	void FixedUpdate () 
+	// check whether is snake out of gameplane
+	void Update () 
 	{
 		GameObject[] snakeBody;
 		bool inside = false;
@@ -82,9 +85,7 @@ public class LevelManager : MonoBehaviour
 			if (GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds.center.z<-20)
 			{
 				inside = false;
-			//	print(false);
 			}
-			//print(GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds.center.z);
 			if (inside) 
 			{
 				break;

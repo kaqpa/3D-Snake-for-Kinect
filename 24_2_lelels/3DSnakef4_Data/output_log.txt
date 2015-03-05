@@ -1,0 +1,346 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [igdumdx32.dll 8.15.10.2462]
+    Renderer: Intel(R) HD Graphics Family
+    Vendor:   Intel
+    VRAM:     976 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
+FMOD failed to initialize ... A call to a standard soundcard driver failed, which could possibly mean a bug in the driver or resources were missing or exhausted. 
+ 
+(Filename:  Line: 239)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.185 seconds
+desktop: 1366x768 60Hz; virtual: 3286x1080 at -1920,-312
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\g\FI MUNI\7. semester podzim 2014\b2\new\24_2_lelels\3DSnakef4_Data\Managed\System.Core.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at LevelButtons.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NuiInitialize Failed - Device is not connected.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+System.Exception: NuiInitialize Failed
+  at KinectManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at LevelButtons.OnMouseEnter () [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.HitInfo:SendMessage(String)
+UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at LevelButtons.OnMouseExit () [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.HitInfo:SendMessage(String)
+UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
+ 
+(Filename:  Line: -1)
+
+Null
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+UnloadTime: 1.124007 ms
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 242.
+Total: 6.646750 ms (FindLiveObjects: 0.048030 ms CreateObjectMapping: 0.035715 ms MarkObjects: 0.371521 ms  DeleteObjects: 0.103040 ms)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+UnloadTime: 0.957746 ms
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 238.
+Total: 2.110490 ms (FindLiveObjects: 0.038589 ms CreateObjectMapping: 0.033662 ms MarkObjects: 0.415037 ms  DeleteObjects: 0.016010 ms)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+eaten food, score 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+eaten food, score 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+eaten food, score 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+eaten food, score 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+eaten food, score 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+won the level
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+winning screen loaded
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+eaten food, score 6
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+eaten food, score 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+eaten food, score 8
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+checking death: False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 19.536709 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 208.
+Total: 3.505031 ms (FindLiveObjects: 0.036125 ms CreateObjectMapping: 0.028736 ms MarkObjects: 0.348122 ms  DeleteObjects: 1.509897 ms)
+
+won level - i am alive
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Your score:
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.059145 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 230.
+Total: 1.527960 ms (FindLiveObjects: 0.026683 ms CreateObjectMapping: 0.022168 ms MarkObjects: 0.268891 ms  DeleteObjects: 0.022989 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at LevelButtons.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NuiInitialize Failed - Device is not connected.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+System.Exception: NuiInitialize Failed
+  at KinectManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
