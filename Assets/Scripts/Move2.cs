@@ -16,6 +16,7 @@ public class Move2 : MonoBehaviour
 
 	public GameObject food;
 	public GameObject snakeprefab;
+	public GameObject foodColored;
 	public AudioClip eating;
 	public GameObject ko;
 	// Use this for initialization
@@ -44,14 +45,20 @@ public class Move2 : MonoBehaviour
 			float pz = (float) Random.Range(0,10);
 			Vector3 foodPosition = new Vector3 (px, py, pz);
 			Instantiate (food, foodPosition, Quaternion.identity);
+			print("cerated new food");
+			Instantiate(foodColored, foodPosition, Quaternion.identity);
+			print("created second food");
 			
 			Vector3 NewBodyPosition = GameObject.Find("snake" + GameObject.Find("snake1").GetComponent<Move2>().snakeLength).transform.position;
 			GameObject newbody = (GameObject)Instantiate (snakeprefab, NewBodyPosition, Quaternion.identity);
 			GameObject.Find("snake1").GetComponent<Move2>().snakeLength++;
 			newbody.name = "snake" + GameObject.Find("snake1").GetComponent<Move2>().snakeLength;
-
+			print("destroyed food");
 			Destroy(c.gameObject);
 		}
+		if (c.gameObject.tag == "RightFood") {
+			Destroy(c.gameObject);
+				}
 	}
 
 	public void Move()

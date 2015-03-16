@@ -5,11 +5,13 @@ using System.Collections;
 public class FoodPoisonCollision : MonoBehaviour 
 {	
 	public GameObject food;
-	
+	public GameObject foodColored;
+
 	void OnTriggerEnter(Collider c)
 	{
 		if (c.gameObject.tag == "Poison") 
 		{
+			print("collision food poison");
 			Destroy(this.gameObject);
 			
 			float px = (float) Random.Range(0,10);
@@ -19,6 +21,9 @@ public class FoodPoisonCollision : MonoBehaviour
 			Vector3 foodPosition = new Vector3(px, py, pz);
 			
 			Instantiate(food, foodPosition, Quaternion.identity);
+			print("created normal food");
+			Instantiate(foodColored, foodPosition, Quaternion.identity);
+			print("created right food");
 		}
 	}
 }

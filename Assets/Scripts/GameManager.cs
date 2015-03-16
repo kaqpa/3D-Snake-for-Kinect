@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour {
 		
 		//Sets the position of GUI Text
 		this.guiText.pixelOffset = new Vector2 (Screen.width/6,Screen.height/2);
-		//this.guiText.text = "Score:" + score;
+
 		
 		//Checks, if there is no other GameManager in scene
 		if(GameObject.Find("_GameManager_") != this.gameObject)

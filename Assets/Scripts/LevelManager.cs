@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
 
 	public GameObject food;
 	public GameObject poison;
+	public GameObject foodColored;
+	public GameObject poisonColored;
 	public Vector3[] foodPosition;
 	public Vector3[] poisonPosition;
 
@@ -51,13 +53,17 @@ public class LevelManager : MonoBehaviour
 		foodPosition = new Vector3[foodNumber];
 		for (int i = 0; i < foodNumber; i++) 
 		{
+			print(i);
 			float px = (float) Random.Range(0,10);
 			float py = (float) Random.Range(0,10);
 			float pz = (float) Random.Range(0,10);
 			foodPosition[i] = new Vector3(px, py, pz);
 			//creates food for both screens
 			Instantiate(food, foodPosition[i], Quaternion.identity);
+			print("created normal food");
 			Instantiate(foodColored, foodPosition[i], Quaternion.identity);
+			print("created right food");
+			print("food created");
 		}
 		// creates poison
 		int poisonNumber = level;
@@ -70,10 +76,11 @@ public class LevelManager : MonoBehaviour
 			poisonPosition[i] = new Vector3(px, py, pz);
 			Instantiate(poison, poisonPosition[i], Quaternion.identity);
 			Instantiate(poisonColored, poisonPosition[i], Quaternion.identity);
+			print("poison created");
 		}	
 	}
 
-	// check whether is snake out of gameplane
+
 	void Update () 
 	{
 		GameObject[] snakeBody;
@@ -81,6 +88,7 @@ public class LevelManager : MonoBehaviour
 		int snakeLength = GameObject.Find ("snake1").GetComponent<Move2> ().snakeLength;
 		for (int i = 1; i <= snakeLength; i++) 
 		{
+			// check whether is snake out of gameplane
 			inside = GeometryUtility.TestPlanesAABB (GeometryUtility.CalculateFrustumPlanes (mainCamera), GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds);
 			if (GameObject.Find ("snake" + i).GetComponent<BoxCollider>().bounds.center.z<-20)
 			{

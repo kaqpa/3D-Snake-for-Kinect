@@ -106,6 +106,7 @@ MonoBehaviour:
   currentLevel: 4
   death: 0
   winning: 0
+  game: 0
   eating: {fileID: 8300000, guid: 3b4b67ccd67a15e44937e365a4caa2d7, type: 3}
 --- !u!132 &126461285
 GUIText:
@@ -251,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00db858c1f8ff90478dad0aa1bac9a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabledKinect: {fileID: 0}
   TwoUsers: 0
   ComputeUserMap: 1
   ComputeColorMap: 0
@@ -373,6 +375,18 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.x
       value: .50999999
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9a1d093776df26940a07e14d468a2394, type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294965759
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9a1d093776df26940a07e14d468a2394, type: 2}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9a1d093776df26940a07e14d468a2394, type: 2}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a1d093776df26940a07e14d468a2394, type: 2}
   m_RootGameObject: {fileID: 410697451}
@@ -441,12 +455,12 @@ Camera:
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294965759
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -984,7 +998,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294965247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1037,6 +1051,8 @@ MonoBehaviour:
   level: 4
   food: {fileID: 100000, guid: 0730bad85955bce428bf7adee1b0426f, type: 2}
   poison: {fileID: 100000, guid: 27b1a0bc515b0a64f96d932fbb8da62a, type: 2}
+  foodColored: {fileID: 100000, guid: 60b956eb260e4544e85381490ecbd7b0, type: 2}
+  poisonColored: {fileID: 100000, guid: 753d70d7571d17a47944078dbb7ba729, type: 2}
   foodPosition: []
   poisonPosition: []
   mainCamera: {fileID: 216760096}

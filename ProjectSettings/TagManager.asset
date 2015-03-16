@@ -10,7 +10,7 @@ TagManager:
   - Food
   - Snake
   - Tail
-  - 
+  - RightFood
   - 
   - 
   Builtin Layer 0: Default
@@ -23,8 +23,8 @@ TagManager:
   Builtin Layer 7: 
   User Layer 8: Ignore
   User Layer 9: Grid
-  User Layer 10: 
-  User Layer 11: 
+  User Layer 10: Food left
+  User Layer 11: Food right
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 

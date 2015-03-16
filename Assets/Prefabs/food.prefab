@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   - 82: {fileID: 8204846}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: food
   m_TagString: Food
   m_Icon: {fileID: 0}
@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 100000}
+  foodColored: {fileID: 100000, guid: 60b956eb260e4544e85381490ecbd7b0, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
