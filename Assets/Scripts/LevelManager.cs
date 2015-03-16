@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 	public GameObject snakehead;
 	public GameObject snakeprefab;
 	public GameObject gridCube;
+	public GameObject gridCubeRight;
 
 	public int level = 1;
 
@@ -40,6 +41,11 @@ public class LevelManager : MonoBehaviour
 				for (int k = 0; k < 10; k++) 
 				{
 					Instantiate(gridCube, new Vector3(i, j, k), Quaternion.identity);
+					if (i==9)
+					{
+						Instantiate(gridCubeRight, new Vector3(i+2, j, k), Quaternion.identity);
+						print("created back plne");
+					}
 					//GameObject.Find("gridCube(Clone)").gameObject.transform.parent = GameObject.Find("_LevelManager_").transform;
 					GameObject.Find("gridCube(Clone)").gameObject.name = "gridCell(" + i + ", " + j + ", " + k + ")";
 					

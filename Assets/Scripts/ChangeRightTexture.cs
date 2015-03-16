@@ -2,23 +2,23 @@
 using System.Collections;
 
 public class ChangeRightTexture : MonoBehaviour {
-	Texture samePlane;
-	Texture back;
-	Texture front;
+	public Material samePlane;
+	public Material back;
+	public Material front;
 	GameObject snake;
 
 
 	// Use this for initialization
 	void Start () {
 		snake = GameObject.FindGameObjectWithTag ("Snake");
-		if (snake.transform.position.x == this.transform.position.x) {
-			this.renderer.material.mainTexture = samePlane;
+		if (snake.transform.position.z == this.transform.position.z) {
+			this.renderer.material = samePlane;
 				}
-		if (snake.transform.position.x < this.transform.position.x) {
-			this.renderer.material.mainTexture = back;
+		if (snake.transform.position.z > this.transform.position.z) {
+			this.renderer.material = back;
 		}
-		if (snake.transform.position.x > this.transform.position.x) {
-			this.renderer.material.mainTexture = front;
+		if (snake.transform.position.z < this.transform.position.z) {
+			this.renderer.material = front;
 		}
 	
 	}
@@ -26,14 +26,14 @@ public class ChangeRightTexture : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		snake = GameObject.FindGameObjectWithTag ("Snake");
-		if (snake.transform.position.x == this.transform.position.x) {
-			this.renderer.material.mainTexture = samePlane;
+		if (snake.transform.position.z == this.transform.position.z) {
+			this.renderer.material = samePlane;
 		}
-		if (snake.transform.position.x < this.transform.position.x) {
-			this.renderer.material.mainTexture = back;
+		if (snake.transform.position.z > this.transform.position.z) {
+			this.renderer.material = back;
 		}
-		if (snake.transform.position.x > this.transform.position.x) {
-			this.renderer.material.mainTexture = front;
+		if (snake.transform.position.z < this.transform.position.z) {
+			this.renderer.material = front;
 		}
 	}
 }
